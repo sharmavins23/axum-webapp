@@ -43,3 +43,4 @@ code (and the server code) to expose the server and quickly run it.
 - Configured integration testing for server routes.
 - Query-based parameter HTTP GET functionality.
 - Path-based parameter HTTP GET functionality.
+- Static file serving based on URL.
