@@ -5,9 +5,8 @@
 
 // ===== Imports ===============================================================
 
+use axum::{response::Html, routing::get, Router, Server};
 use std::net::SocketAddr;
-
-use axum::{Router, Server, response::Html, routing::get};
 
 // ===== Driver code ===========================================================
 

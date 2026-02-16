@@ -7,4 +7,10 @@ different features.
 
 ## Implemented Features
 
+### Core Functionality
+
 - Simple HTTP `GET` routing and responses.
+
+### Testing
+
+- Automated hot-reload (dual client/server) compilation and testing.
