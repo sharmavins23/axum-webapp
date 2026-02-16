@@ -96,6 +96,9 @@ dependencies = [
  "axum",
  "color-eyre",
  "httpc-test",
+ "hyper 1.8.1",
+ "serde",
+ "serde_json",
  "tokio",
 ]
 

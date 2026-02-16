@@ -46,4 +46,4 @@ code (and the server code) to expose the server and quickly run it.
 
 ### Testing
 
-- End-to-end integration testing for a particular server route.
+- Configured integration testing for server routes.

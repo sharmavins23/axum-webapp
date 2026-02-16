@@ -1,11 +1,7 @@
-#![deny(clippy::expect_used)]
-#![deny(clippy::unwrap_used)]
-#![forbid(unsafe_code)]
-
-// ===== Imports ===============================================================
+//! Main entry point for the application.
 
 use axum::Server;
-use axum_webapp::create_router;
+use axum_webapp::router::create_router;
 use color_eyre::eyre::Report;
 use std::net::SocketAddr;
 
