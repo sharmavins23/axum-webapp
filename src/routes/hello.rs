@@ -1,4 +1,11 @@
 //! Route handler for the `/hello` endpoint.
+//!
+//! # Query Parameters
+//! - `name` (optional): The name to greet.
+//!
+//! # Examples
+//! - `/hello` returns "Hello, World!"
+//! - `/hello?name=Alice` returns "Hello, Alice!"
 
 use axum::{
     extract::Query,
@@ -17,8 +24,6 @@ pub struct HelloParams {
 
 /// Handler for the `/hello` route.
 pub async fn route_hello(params: Query<HelloParams>) -> impl IntoResponse {
-    println!("->> {:<12} - route_hello - {params:?}", "HANDLER");
-
     let name: &str = params.name.as_deref().unwrap_or("World");
     Html(format!("<h1>Hello, {name}!</h1>"))
 }

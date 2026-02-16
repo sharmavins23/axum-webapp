@@ -40,10 +40,6 @@ code (and the server code) to expose the server and quickly run it.
 
 ## Implemented Features
 
-### Core Functionality
-
-- Simple HTTP `GET` routing and responses.
-
-### Testing
-
 - Configured integration testing for server routes.
+- Query-based parameter HTTP GET functionality.
+- Path-based parameter HTTP GET functionality.

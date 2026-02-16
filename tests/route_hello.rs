@@ -3,12 +3,13 @@
 mod utils;
 
 use color_eyre::eyre::Report;
+use tokio::test;
 use utils::server::create_server_client;
 
 // ===== Tests =================================================================
 
 /// Verify that the `/hello?name=Alice` endpoint returns "Hello, Alice!".
-#[tokio::test]
+#[test]
 async fn hello_alice() -> Result<(), Report> {
     let http_client = create_server_client().await?;
 
@@ -21,7 +22,7 @@ async fn hello_alice() -> Result<(), Report> {
 }
 
 /// Verify that the `/hello` endpoint returns "Hello, World!".
-#[tokio::test]
+#[test]
 async fn hello_world() -> Result<(), Report> {
     let http_client = create_server_client().await?;
 
